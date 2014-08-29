@@ -1,0 +1,3 @@
+Sphinx
+hieroglyph
+osuosl-hieroglyph-theme
