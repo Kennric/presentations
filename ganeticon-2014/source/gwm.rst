@@ -94,15 +94,53 @@ Interacting with the RAPI
 
 
 
-Live Demo
-=========
+New in 0.11
+===========
 
-Live Demo (if time)
+.. rst-class:: build
+
+**Stabilize and Package**
+
+- Move to Github
+- Modularization
+- Python package
+- Setup script
+- Chef deployment
+- Development Environment (vagrant)
+- Better documentation
+
+
+New in 0.11
+===========
+
+.. rst-class:: build
+
+**New Features**
+
+- VM creation wizard
+- Bulk actions
+- Visualization
+
+
+Experimental Projects
+=====================
+
+- Export VM
+- Serial Console
 
 
 Lessons Learned
 ===============
 
+- Serial terminal communication
+- Django packaging
+- RAPI Documentation
+
+
+Live Demo
+=========
+
+Live Demo (if time)
 
 
 Questions?
