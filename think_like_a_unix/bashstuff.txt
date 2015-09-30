@@ -1,0 +1,18 @@
+alias figlet=figlet -c -f big
+
+ls
+ls | grep rvmb
+ls | grep rvmb | sed -e "s/.//2"
+ls | grep rvmb | sed -e "s/.//2" | sort -k 1.1
+ls | grep rvmb | sed -e "s/.//2" | sort -k 1.1 | sed -e "s/rvmb//g"
+
+	
+cat testo.txt | tr A-Za-z01 N-ZA-Mn-za-m\<3 | figlet
+
+cat *.testo
+cat *.testo | grep set
+cat *.testo | grep set | sort |sed -e "s/5/0/g"
+cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}'
+cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}' | sed ':a;N;$!ba;s/\n/ /g'
+cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}' | sed ':a;N;$!ba;s/\n/ /g' |  tr A-Za-z01 N-ZA-Mn-za-m\<3 | figlet
+
