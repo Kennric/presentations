@@ -15,6 +15,7 @@
 import sys
 import os
 import shlex
+import osuosl_hieroglyph_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -29,7 +30,7 @@ import shlex
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = ['hieroglyph']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -106,9 +107,16 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
+html_theme = 'osuosl'  ##(must be changed in file)!
+html_theme_path = osuosl_hieroglyph_theme.get_html_theme_path()
+html_static_path = ['_static', html_theme_path + '/osuosl/static/'] 
+slide_theme = 'single-level'
+slide_theme_options = {'custom_css' : 'osuosl.css'}
+slide_footer = "<img src='_static/logo.png'>"
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'alabaster'
+# html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -137,7 +145,7 @@ html_theme = 'alabaster'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

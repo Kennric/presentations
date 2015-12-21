@@ -16,3 +16,6 @@ cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}'
 cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}' | sed ':a;N;$!ba;s/\n/ /g'
 cat *.testo | grep set | sort |sed -e "s/5/0/g" | awk '{print $4}' | sed ':a;N;$!ba;s/\n/ /g' |  tr A-Za-z01 N-ZA-Mn-za-m\<3 | figlet
 
+
+
+https://data.cityofnewyork.us/api/views/25th-nujf/rows.json?accessType=DOWNLOAD
